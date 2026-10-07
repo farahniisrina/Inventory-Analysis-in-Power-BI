@@ -34,8 +34,18 @@ The dataset comprises four different Excel files:
 ## Methodology
 The methodology employed for this project comprised the following steps: defining the requirements, data collection, data cleaning and transformation, data modeling, visualization design, testing and validation, and ultimately publishing and sharing insights.
 
-After importing the CSV file, I began by exploring the available columns and data using Power Query. I noticed the 'Price 'table has errors with some of its values, and table Stock seems to have a blank space in one of their 'SKU-ID'. To correct this, I fix the column headers, remove the sign errors, and correctly format the 'Retail_Price' column.
+The first phase established a robust foundation by transforming raw operational data into a clean, relational data model to support complex analytical calculations. Power Query was utilized to inspect data distributions, handle missing values, and validate data types across transactional and master datasets. An optimized Star Schema was designed to ensure high performance and intuitive filter context behavior. One-to-many (1:*) relationships was established between the central fact table and peripheral dimension tables.
+- The Costs table is connected to the Stock table through a many-to-one relationship.
 
+- The Orders table is connected to the Stock table through a many-to-one relationship.
+
+- The Categories table has a one-to-one relationship with the Stock table.
+
+- The Stock table is linked to the ABC table through a one-to-one relationship.
+
+- The ABC table is connected to the Turnover table through a one-to-one relationship.
+
+###  Operational Efficiency (Inventory Turnover Analysis)
 DAX measures were written to dynamically compute the components of the standard efficiency formula. First, I calculate the Total Cost of Goods Sold (COGS) by summing up the cost value of all items sold from the sales.
 ```
 Total COGS = 
