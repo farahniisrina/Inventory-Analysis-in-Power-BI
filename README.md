@@ -91,6 +91,10 @@ Consistency was taken into account, making sure the fonts, the sizes, and all th
 
 ## Executive Summary
 Below are the major insights that emerged from the analysis:
+- The dashboard visually highlights that a small minority of products (Class A) generate roughly 80% of total revenue. These high-value items are the lifeblood of the company and require constant monitoring, while low-value items (Class C) can be managed with minimal effort.
+- The chart tracking the Inventory Turnover Ratio (ITR) exposes specific product categories where stock sits unsold for too long (low ITR). This represents frozen cash that could be used elsewhere.
+- Conversely, core fast-moving items show dangerously high turnover ratios. When combined with slow delivery times, these items are at immediate risk of running out of stock during peak season.
+- The most important visual on the dashboard is the intersection of product value and vendor risk. It flags instances where Class A (high-revenue) products are reliant on High-Risk Suppliers (vendors with long delays or high defect rates). A single delay from these specific suppliers could instantly halt the company’s primary revenue streams.
 
 ## Recommendations
 Based on the analysis, the following recommendations are proposed:
